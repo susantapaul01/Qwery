@@ -37,3 +37,20 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@mixin mx-10 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+@mixin mx-none {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@mixin w-48 {
+  width: 48%;
+}
+@mixin w-100 {
+  width: 100%;
+}

@@ -1,15 +1,10 @@
 nav {
-  //   background: #000;
-  padding: 20px 0px;
   width: 100%;
   position: absolute;
+  border-bottom: 1px solid #ccc;
+  z-index: 1;
 
   .mynav {
-    @include flexstyle(space-between, center, row);
-    // .logo {
-    // background: red;
-    //   width: 15%;
-    // }
     .list-item {
       list-style-type: none;
       li {
@@ -30,9 +25,9 @@ nav {
     }
     .nav-search {
       align-items: center;
+      justify-content: flex-end;
       i {
         color: $mywhite;
-        margin-right: 15px;
       }
       button {
         font-size: $font-pg;
@@ -42,6 +37,11 @@ nav {
         text-transform: capitalize;
         font-weight: 500;
         cursor: pointer;
+        margin-left: 15px;
+
+        i {
+          font-size: 24px;
+        }
       }
     }
   }

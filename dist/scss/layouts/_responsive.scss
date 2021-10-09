@@ -1,0 +1,149 @@
+// ======= less then 768px ========
+@include mini {
+  .container {
+    width: 100%;
+  }
+  // ===========
+  nav {
+    padding: 12px 0px;
+    .mynav {
+      @include mx-10;
+      justify-content: space-between;
+      align-items: center;
+      .list-item {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 53px;
+        left: 0;
+        background: red;
+        padding: 2% 10%;
+        li {
+          margin: 10px 0px;
+        }
+      }
+      .nav-search {
+        button:last-child {
+          position: absolute;
+          right: 10px;
+          top: 56px;
+          i {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  // ===========
+  .banner {
+    height: 550px;
+    .banner-content {
+      @include mx-10;
+      .heading {
+        font-size: $font-pg;
+      }
+      .sub-heading {
+        font-size: $fontsize-1-sm;
+      }
+    }
+  }
+  //   ============
+  .add-section {
+    @include mx-10;
+    @include flexstyle(flex-start, flex-start, column);
+
+    .heading-sm {
+      display: block;
+      @include textheading;
+      font-size: $font-pg;
+      margin-bottom: $mb-30;
+    }
+    .image {
+      @include w-100;
+      margin-bottom: $mb-30;
+    }
+    .add-details {
+      @include w-100;
+
+      .heading {
+        display: none;
+      }
+      .sub-heading {
+        font-size: $fontsize-1-sm;
+      }
+
+      a {
+        font-size: $font-pg;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  //   ============
+  .adv-cover-section {
+    .adv-details {
+      .heading {
+        font-size: $font-pg;
+      }
+      .sub-heading {
+        font-size: $fontsize-1-sm;
+        width: 97%;
+        @include mx-10;
+      }
+      .prg {
+        width: 97%;
+      }
+      a {
+        font-size: $font-pg;
+      }
+    }
+  }
+}
+
+// ======= Up to 768px ========
+@include md {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  // ==================
+  nav {
+    padding: 20px 0px;
+    .mynav {
+      .logo {
+        width: 15%;
+      }
+      .list-item {
+        width: 70%;
+        @include flexstyle(center, center, row);
+      }
+      .nav-search {
+        width: 15%;
+
+        button:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+  //   ==============
+  .add-section {
+    .heading-sm {
+      display: none;
+    }
+    .image {
+      @include w-48;
+    }
+    .add-details {
+      @include w-48;
+    }
+  }
+}
+
+// ======== Up to 992 =======
+@include lg {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
