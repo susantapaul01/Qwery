@@ -280,6 +280,10 @@ nav .mynav .nav-search button i {
   letter-spacing: 2px;
 }
 
+.branding .brand-explore {
+  text-align: right;
+}
+
 .branding .brand-explore p {
   color: #ffffff;
   display: inline-block;
@@ -319,7 +323,6 @@ nav .mynav .nav-search button i {
 }
 
 .footer .footer-left {
-  width: 25%;
   text-align: left;
 }
 
@@ -348,7 +351,6 @@ nav .mynav .nav-search button i {
 }
 
 .footer .footer-right {
-  width: 60%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -507,6 +509,21 @@ nav .mynav .nav-search button i {
     display: block;
     text-align: center;
   }
+  .order-smd .heading-sm {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order-smd .image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .order-smd .add-details {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
   .adv-cover-section .adv-details .heading {
     font-size: 16px;
   }
@@ -521,6 +538,44 @@ nav .mynav .nav-search button i {
   }
   .adv-cover-section .adv-details a {
     font-size: 16px;
+  }
+  .branding {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .branding .brand-name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .branding .brand-explore {
+    width: 100%;
+    text-align: center;
+  }
+  .footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .footer .footer-left {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #808080;
+  }
+  .footer .footer-right {
+    width: 100%;
   }
 }
 
@@ -562,6 +617,21 @@ nav .mynav .nav-search button i {
   }
   .add-section .add-details {
     width: 48%;
+  }
+  .branding .brand-name {
+    width: 48%;
+  }
+  .branding .brand-explore {
+    width: 48%;
+  }
+  .footer .footer-left {
+    width: 25%;
+  }
+  .footer .footer-right {
+    width: 60%;
+  }
+  .order-smd .heading-sm {
+    display: none;
   }
 }
 

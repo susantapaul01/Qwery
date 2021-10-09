@@ -3,7 +3,6 @@
   margin-bottom: $mb-30;
 
   .footer-left {
-    width: 25%;
     text-align: left;
 
     h2 {
@@ -20,7 +19,6 @@
     }
   }
   .footer-right {
-    width: 60%;
     @include flexstyle(space-between, flex-start, row);
 
     .footer-right-link-line {
