@@ -1,40 +1,40 @@
 .footer {
-  @include flexStyle(space-between, flex-start, row);
-  margin-bottom: $subgap;
+  @include flexstyle(space-between, flex-start, row);
+  margin-bottom: $mb-30;
 
   .footer-left {
     width: 25%;
     text-align: left;
 
     h2 {
-      color: $paragraphText;
-      margin-bottom: $textgap-2;
+      color: $mywhite;
+      margin-bottom: $mb-30;
     }
     .footer-left-link {
-      @include flexStyle(space-between, flex-start, row);
+      @include flexstyle(space-between, flex-start, row);
       a {
-        color: $paragraphText;
-        font-size: $paraFontsize;
+        color: $mywhite;
+        font-size: $font-pg;
         text-decoration: none;
       }
     }
   }
   .footer-right {
     width: 60%;
-    @include flexStyle(space-between, flex-start, row);
+    @include flexstyle(space-between, flex-start, row);
 
     .footer-right-link-line {
-      @include flexStyle(flex-start, flex-start, column);
+      @include flexstyle(flex-start, flex-start, column);
 
       a {
         display: block;
-        color: $paragraphText;
+        color: $mywhite;
+        font-size: 15px;
         line-height: 2.5;
-        font-size: $paraFontsize;
         text-decoration: none;
 
         &:nth-child(1) {
-          color: $buttobgcolor;
+          color: $mybtn;
         }
       }
     }
@@ -43,27 +43,27 @@
 
 .bottom {
   text-align: center;
-  margin-bottom: $textgap-2;
+  margin-bottom: $mb-30;
 
   .social-links {
-    margin-bottom: $textgap-2;
+    margin-bottom: $mb-30;
     a {
       margin: 0px 10px;
       transition: all 0.3s;
 
       i {
-        color: #fff;
+        color: $mywhite;
       }
       &:hover i {
-        color: $buttobgcolor;
+        color: $mybtn;
       }
     }
   }
+
   .copyright {
     p {
       font-size: 14px;
       color: #ccc;
-      color: #fff;
     }
   }
 }

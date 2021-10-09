@@ -1,0 +1,44 @@
+.banner {
+  background-image: url('../images/banner.png');
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: $mb-120;
+
+  .fuzzy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.6) 6%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .banner-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include flexstyle(center, flex-start, column);
+
+    .heading {
+      @include textheading;
+    }
+    .sub-heading {
+      @include subheading(76px, capitalize);
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

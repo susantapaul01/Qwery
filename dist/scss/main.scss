@@ -1,4 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import './utiles/variables';
+@import './utiles/mixin';
+@import './utiles/base';
+
+@import './pages/home';

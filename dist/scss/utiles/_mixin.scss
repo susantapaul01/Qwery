@@ -1,0 +1,39 @@
+@mixin flexstyle($justify, $align, $direction) {
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin textheading {
+  color: $myyellow;
+  font-size: $fontsize-2;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: $mb-15;
+}
+
+@mixin subheading($fontsize, $transform) {
+  color: $mywhite;
+  font-size: $fontsize;
+  text-transform: $transform;
+  font-weight: 500;
+  margin-bottom: $mb-15;
+}
+
+@mixin paragraph {
+  font-size: $font-pg;
+  color: $mywhite;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: $mb-30;
+}
+
+@mixin readmeBtn {
+  color: $myyellow;
+  font-size: $fontsize-2;
+  font-weight: 500;
+  margin-bottom: $mb-30;
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.adv-cover-section {
+  background-image: url('../images/banner-1.jpg');
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  position: relative;
+  margin-bottom: $mb-120;
+
+  .adv-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include flexstyle(flex-end, center, column);
+
+    .heading {
+      @include textheading;
+    }
+    .sub-heading {
+      @include subheading($fontsize-1, uppercase);
+      width: 70%;
+      text-align: center;
+    }
+    .prg {
+      @include paragraph;
+      width: 80%;
+      text-align: center;
+    }
+    a {
+      @include readmeBtn;
+    }
+  }
+}

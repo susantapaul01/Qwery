@@ -1,0 +1,25 @@
+.add-section {
+  @include flexstyle(space-between, flex-start, row);
+  margin-bottom: $mb-120;
+
+  .image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .add-details {
+    .heading {
+      @include textheading;
+    }
+    .sub-heading {
+      @include subheading($fontsize-1, uppercase);
+    }
+    .prg {
+      @include paragraph;
+    }
+    a {
+      @include readmeBtn;
+    }
+  }
+}

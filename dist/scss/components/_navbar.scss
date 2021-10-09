@@ -1,0 +1,48 @@
+nav {
+  //   background: #000;
+  padding: 20px 0px;
+  width: 100%;
+  position: absolute;
+
+  .mynav {
+    @include flexstyle(space-between, center, row);
+    // .logo {
+    // background: red;
+    //   width: 15%;
+    // }
+    .list-item {
+      list-style-type: none;
+      li {
+        margin: 0px 12px;
+        a {
+          font-size: $font-pg;
+          color: $mywhite;
+          text-transform: capitalize;
+          text-decoration: none;
+          font-weight: 400;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $myyellow;
+          }
+        }
+      }
+    }
+    .nav-search {
+      align-items: center;
+      i {
+        color: $mywhite;
+        margin-right: 15px;
+      }
+      button {
+        font-size: $font-pg;
+        background: transparent;
+        border: none;
+        color: $mywhite;
+        text-transform: capitalize;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}

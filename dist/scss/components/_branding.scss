@@ -1,0 +1,33 @@
+.branding {
+  @include flexstyle(space-between, center, row);
+  margin-bottom: $mb-30;
+  .brand-name {
+    color: $mywhite;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .brand-explore {
+    p {
+      color: $mywhite;
+      display: inline-block;
+    }
+    a {
+      color: #000;
+      font-size: $font-pg;
+      padding: 8px 12px;
+      background: $mybtn;
+      margin-left: 30px;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 3px;
+    }
+  }
+}
+
+.desh-line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin-bottom: $mb-30;
+}
